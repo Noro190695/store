@@ -29,5 +29,10 @@ return [
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
+    'facebook' => [
+        'client_id' => '613210323339389', //USE FROM FACEBOOK DEVELOPER ACCOUNT
+        'client_secret' => 'aa7346e05339d20efe22c1423f65ba63', //USE FROM FACEBOOK DEVELOPER ACCOUNT
+        'redirect' => 'http://bewedoc.co/api/facebook/callback/'
+    ],
 
 ];

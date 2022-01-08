@@ -175,6 +175,15 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        // JWT Auth Providers...
+        Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
+
+        // Roles Permission Provider
+        Spatie\Permission\PermissionServiceProvider::class,
+
+        //Social Sites Provider
+        Laravel\Socialite\SocialiteServiceProvider::class,
+
     ],
 
     /*
@@ -229,6 +238,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'Socialite' => Laravel\Socialite\Facades\Socialite::class,
 
     ],
 
